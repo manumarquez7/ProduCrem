@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="web_standard" name="shell-type"/>
+<title>Producrem | Marketing Digital y Eventos</title>
+
+
+
+
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+      }
+      body {
+        overscroll-behavior-y: none;
+      }
+    }
+    ::selection {
+      background-color: #00677d;
+      color: #ffffff;
+    }
+  </style>
+<link href="tailwind-home.css" rel="stylesheet"/>
+<link href="fonts-home.css" rel="stylesheet"/>
+<link href="site.css" rel="stylesheet"/>
+<script src="site.js" defer></script>
+</head>
+<body class="site-home site-polished bg-background font-sans text-on-surface antialiased selection:bg-secondary selection:text-white">
+<!-- 1. HEADER EDITORIAL MINIMALISTA -->
+<header class="fixed top-0 left-0 right-0 z-50 w-full bg-background/90 backdrop-blur-md border-b border-outline-variant/40 transition-colors duration-200">
+<div class="max-w-7xl mx-auto h-20 px-6 lg:px-12 flex items-center justify-between">
+<!-- Logo Producrem -->
+<a class="flex items-center gap-3.5 group" data-path="inicio" href="index.html">
+<img alt="" class="w-8 h-8 rounded-full object-cover ring-1 ring-black/10 group-hover:scale-105 transition-transform" src="producrem-logo.jpg" width="150" height="150" decoding="async" fetchpriority="high"/>
+<div class="flex items-center gap-1.5">
+<span class="font-display font-black tracking-tight text-[17px] text-on-surface">PRODUCREM</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary inline-block"></span>
+</div>
+</a>
+<!-- Clean Editorial Navigation -->
+<nav aria-label="Navegación principal" class="hidden md:flex items-center gap-8 text-[13px] tracking-wider uppercase font-semibold text-on-surface-variant">
+<a aria-current="page" class="text-on-surface border-b-2 border-primary pb-0.5" data-path="inicio" href="index.html">Inicio</a>
+<a class="hover:text-on-surface transition-colors" data-path="eventos" href="eventos.html">Eventos</a>
+<a class="hover:text-on-surface transition-colors" data-path="nosotros" href="nosotros.html">Nosotros</a>
+</nav>
+<!-- Minimal CTA -->
+<div class="hidden md:flex items-center gap-4">
+<a class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-primary text-on-primary font-display font-bold text-xs uppercase tracking-widest hover:bg-secondary transition-all duration-300 shadow-sm" href="https://wa.me/5493516370246" rel="noopener noreferrer" target="_blank">
+<span>Solicitá Presupuesto</span>
+<span class="material-symbols-outlined text-[15px]">arrow_outward</span>
+</a>
+</div>
+<details class="site-mobile-menu md:hidden">
+<summary aria-label="Menú de navegación"><span class="material-symbols-outlined site-menu-open-icon" aria-hidden="true">menu</span><span class="material-symbols-outlined site-menu-close-icon" aria-hidden="true">close</span></summary>
+<nav class="site-mobile-panel" aria-label="Navegación móvil">
+<a data-path="inicio" href="index.html" aria-current="page">Inicio</a>
+<a data-path="eventos" href="eventos.html">Eventos</a>
+<a data-path="nosotros" href="nosotros.html">Nosotros</a>
+<a class="site-mobile-contact" href="https://wa.me/5493516370246" rel="noopener noreferrer" target="_blank">Solicitá Presupuesto</a>
+</nav>
+</details>
+</div>
+</header>
+<main class="w-full pt-20">
+<!-- 2. HERO EDITORIAL MONUMENTAL -->
+<section class="relative w-full border-b border-outline-variant/40 pt-16 lg:pt-24 pb-20 px-6 lg:px-12 bg-background overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<!-- Category & Volume Meta -->
+<div class="flex flex-wrap items-center justify-between border-b border-outline-variant/40 pb-5 mb-10 gap-4">
+<div class="flex items-center gap-3">
+<span class="site-hero-kicker-dot inline-block w-2.5 h-2.5 bg-secondary rounded-full"></span>
+<span class="font-display uppercase tracking-widest font-extrabold text-[11px] text-on-surface">
+              Estrategia, Performance &amp; Contenido
+            </span>
+</div>
+<div class="flex items-center gap-6 font-display text-[11px] uppercase tracking-wider text-on-surface-variant font-semibold">
+<span>Producrem</span>
+<span class="hidden sm:inline">•</span>
+<span class="hidden sm:inline">Córdoba / Barcelona</span>
+<span>•</span>
+<span class="text-secondary font-bold">Especialistas certificados</span>
+</div>
+</div>
+<!-- Monumental Typographic Headline -->
+<div class="space-y-3 mb-12">
+<h1 class="font-display font-black tracking-tightest leading-[0.92] text-[46px] sm:text-[68px] md:text-[84px] lg:text-[104px] text-on-surface uppercase">
+            Marketing<br/>
+<span class="site-hero-accent font-light italic tracking-tight text-on-surface-variant">Inteligente</span>
+<span class="site-hero-dot inline-block text-secondary not-italic">.</span>
+</h1>
+<p class="font-display text-lg sm:text-2xl text-on-surface font-medium max-w-3xl pt-4 tracking-tight">
+            Para impulsar tu negocio al siguiente nivel operativo.
+          </p>
+</div>
+<!-- Two-Column Editorial Spread -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 pt-8 border-t border-outline-variant/40 items-start">
+<!-- Column Left: Manifesto paragraph & CTAs -->
+<div class="lg:col-span-7 flex flex-col justify-between h-full space-y-10">
+<p class="text-on-surface-variant text-lg sm:text-xl leading-relaxed font-normal max-w-xl">
+              Ofrece un mejor servicio a tus clientes dejando en manos de profesionales la gestión de la publicidad digital y redes sociales. Servicios de marketing digital y redes sociales adaptados a las necesidades de cada negocio.
+            </p>
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center gap-3 px-8 py-4 bg-primary text-on-primary font-display font-bold text-xs uppercase tracking-widest rounded-full hover:bg-secondary transition-colors group shadow-sm" href="https://wa.me/5493516370246" rel="noopener noreferrer" target="_blank">
+<span>Solicitá tu Presupuesto Gratis</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-2 px-6 py-4 border border-outline-variant text-on-surface font-display font-bold text-xs uppercase tracking-wider rounded-full hover:border-on-surface transition-colors" href="#ecosistema">
+<span>Explorar Soluciones</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">arrow_downward</span>
+</a>
+</div>
+<!-- Certified Endorsement Line -->
+<div class="pt-8 border-t border-outline-variant/30 flex flex-wrap items-center gap-y-3 gap-x-8 text-xs uppercase tracking-wider font-semibold text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span>Google Partner</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">hub</span>
+<span>Especialistas certificados por Meta</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">corporate_fare</span>
+<span>Group DESINDARG</span>
+</div>
+</div>
+</div>
+<!-- Column Right: Editorial Architecture Frame (No floating generic card) -->
+<div class="lg:col-span-5">
+<div class="site-feature-card border border-on-surface bg-surface-container-lowest p-8 lg:p-10 relative">
+<!-- Corner index mark -->
+<span class="absolute top-3 right-4 font-mono text-[10px] uppercase tracking-widest text-outline">FIG. 01 / ENFOQUE</span>
+<div class="space-y-6">
+<div class="inline-block border-b-2 border-secondary pb-1">
+<span class="font-display text-xs uppercase tracking-widest font-extrabold text-secondary">Rendimiento Publicitario</span>
+</div>
+<div>
+<div class="font-display font-black text-5xl sm:text-6xl text-on-surface tracking-tighter leading-none mb-1">
+                    Meta Ads
+                  </div>
+<p class="font-sans text-xs text-on-surface-variant uppercase tracking-wider font-semibold">
+                    Campañas en redes sociales
+                  </p>
+</div>
+<div class="py-4 border-y border-outline-variant/40 space-y-2">
+<div class="flex justify-between items-baseline text-xs">
+<span class="font-semibold text-on-surface">Meta Ads &amp; Google Ads</span>
+<span class="font-mono text-secondary font-bold">PUBLICIDAD DIGITAL</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                    Planificación de campañas digitales y revisión de resultados según las necesidades de cada negocio.
+                  </p>
+</div>
+<div class="grid grid-cols-2 gap-4 pt-1">
+<div class="border-l-2 border-outline-variant pl-3">
+<span class="block font-display font-bold text-sm text-on-surface">Meta Ads</span>
+<span class="text-[11px] text-on-surface-variant">Campañas &amp; Analytics</span>
+</div>
+<div class="border-l-2 border-outline-variant pl-3">
+<span class="block font-display font-bold text-sm text-on-surface">Google Partner</span>
+<span class="text-[11px] text-on-surface-variant">Google Ads &amp; SEO</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. MANIFIESTO Y VALOR: Editorial Text & Method -->
+<section class="w-full border-b border-outline-variant/40 px-6 lg:px-12 py-20 lg:py-28 bg-white">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+<!-- Left: Subheader -->
+<div class="lg:col-span-4 space-y-4">
+<span class="font-display text-xs uppercase tracking-widest font-extrabold text-secondary block">
+              Metodología de Trabajo
+            </span>
+<h2 class="font-display font-extrabold text-3xl sm:text-4xl text-on-surface tracking-tight leading-tight">
+              Especialistas Certificados para Escalar tu Negocio
+            </h2>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+              Diseño estratégico riguroso, pensamiento analítico y ejecución creativa sin burocracias.
+            </p>
+</div>
+<!-- Right: Two Long-form Editorial Columns -->
+<div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+<div class="site-method-card border-t-2 border-on-surface pt-6 space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-mono text-xs font-bold text-secondary tracking-widest">FASE 01</span>
+<span class="material-symbols-outlined text-on-surface text-[22px]">video_camera_front</span>
+</div>
+<h3 class="font-display font-bold text-xl text-on-surface tracking-tight">
+                Diagnóstico Inicial &amp; Entendimiento
+              </h3>
+<p class="text-on-surface-variant text-sm sm:text-base leading-relaxed">
+                Realizamos una videollamada inicial para conocernos y entender cuáles son las necesidades reales de tu negocio o agencia. Analizamos embudos, audiencias y objetivos específicos antes de proponer una sola línea de acción.
+              </p>
+</div>
+<div class="site-method-card border-t-2 border-on-surface pt-6 space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-mono text-xs font-bold text-secondary tracking-widest">EQUIPO</span>
+<span class="material-symbols-outlined text-on-surface text-[22px]">groups</span>
+</div>
+<h3 class="font-display font-bold text-xl text-on-surface tracking-tight">
+                Talento Multidisciplinario Calificado
+              </h3>
+<p class="text-on-surface-variant text-sm sm:text-base leading-relaxed">
+                Contamos con diseñadores (UNC FAUDI), redactores, editores de video, programadores y especialistas en publicidad digital certificados por Meta y Google. Un equipo multidisciplinario para las necesidades de cada proyecto.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. ECOSISTEMA DE SOLUCIONES: Editorial Spread & Typographic Hierarchy -->
+<section class="w-full border-b border-outline-variant/40 px-6 lg:px-12 py-20 lg:py-32 bg-background" id="ecosistema">
+<div class="max-w-7xl mx-auto">
+<!-- Header -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between border-b border-outline-variant/40 pb-8 mb-16 gap-6">
+<div class="max-w-2xl">
+<span class="font-display text-xs uppercase tracking-widest font-extrabold text-secondary block mb-2">
+              Capacidades Operativas
+            </span>
+<h2 class="font-display font-black text-3xl sm:text-5xl lg:text-6xl text-on-surface tracking-tight">
+              Ecosistema de Soluciones Integrales
+            </h2>
+</div>
+<p class="text-on-surface-variant text-base max-w-md font-normal leading-relaxed">
+            Servicios de contenidos, publicidad digital, desarrollo web y optimización de canales.
+          </p>
+</div>
+<!-- 2 Massive Editorial Pillars -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+<!-- Pillar 1: Social Media & Contenidos -->
+<div class="flex flex-col justify-between border-t-4 border-on-surface pt-8 space-y-10">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-mono text-xs font-bold uppercase tracking-widest text-secondary">PILAR 01 // AUDIENCIA</span>
+<span class="material-symbols-outlined text-on-surface text-[26px]">movie_filter</span>
+</div>
+<h3 class="font-display font-extrabold text-2xl sm:text-3xl text-on-surface tracking-tight mb-3">
+                Social Media &amp; Creación de Contenidos
+              </h3>
+<p class="text-on-surface-variant text-base leading-relaxed mb-8">
+                Contenidos, gestión de redes sociales y acciones de comunicación adaptadas a cada marca.
+              </p>
+<!-- Typographic Line Items -->
+<div class="divide-y divide-outline-variant/40 border-y border-outline-variant/40">
+<div class="py-5 group">
+<div class="flex items-baseline justify-between gap-4 mb-1">
+<span class="font-display font-bold text-lg text-on-surface">Contenidos</span>
+<span class="font-mono text-xs text-outline group-hover:text-secondary transition-colors">01.1</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                    Diseño de contenidos y piezas para redes sociales adaptadas a la identidad de cada marca.
+                  </p>
+</div>
+<div class="py-5 group">
+<div class="flex items-baseline justify-between gap-4 mb-1">
+<span class="font-display font-bold text-lg text-on-surface">Community Management</span>
+<span class="font-mono text-xs text-outline group-hover:text-secondary transition-colors">01.2</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                    Gestión de redes sociales, interacción con la comunidad y respuesta de consultas.
+                  </p>
+</div>
+<div class="py-5 group">
+<div class="flex items-baseline justify-between gap-4 mb-1">
+<span class="font-display font-bold text-lg text-on-surface">Influencer Marketing</span>
+<span class="font-mono text-xs text-outline group-hover:text-secondary transition-colors">01.3</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                    Acciones de influencer marketing según los objetivos de cada proyecto.
+                  </p>
+</div>
+<div class="py-5 group">
+<div class="flex items-baseline justify-between gap-4 mb-1">
+<span class="font-display font-bold text-lg text-on-surface">Publicidad Redes Sociales / Meta Ads</span>
+<span class="font-mono text-xs text-outline group-hover:text-secondary transition-colors">01.4</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                    Creación de campañas de publicidad en Facebook e Instagram.
+                  </p>
+</div>
+</div>
+</div>
+<div class="pt-6">
+<a class="inline-flex items-center gap-2 font-display text-xs uppercase tracking-widest font-extrabold text-on-surface hover:text-secondary transition-colors" href="https://wa.me/5493516370246" rel="noopener noreferrer" target="_blank">
+<span>Diseñar estrategia de redes</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Pillar 2: Marketing Digital & Performance -->
+<div class="flex flex-col justify-between border-t-4 border-secondary pt-8 space-y-10">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-mono text-xs font-bold uppercase tracking-widest text-secondary">PILAR 02 // PERFORMANCE</span>
+<span class="material-symbols-outlined text-secondary text-[26px]">query_stats</span>
+</div>
+<h3 class="font-display font-extrabold text-2xl sm:text-3xl text-on-surface tracking-tight mb-3">
+                Marketing Digital, Performance &amp; Growth
+              </h3>
+<p class="text-on-surface-variant text-base leading-relaxed mb-8">
+                Servicios de SEO, publicidad digital, desarrollo web, comercio electrónico y automatización.
+              </p>
+<!-- Typographic Line Items -->
+<div class="divide-y divide-outline-variant/40 border-y border-outline-variant/40">
+<div class="py-4 group">
+<div class="flex items-baseline justify-between gap-4 mb-1">
+<span class="font-display font-bold text-lg text-on-surface">SEO (Search Engine Optimization)</span>
+<span class="font-mono text-xs text-outline group-hover:text-secondary transition-colors">02.1</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                    Trabajo de SEO para sitios web y contenidos digitales.
+                  </p>
+</div>
+<div class="py-4 group">
+<div class="flex items-baseline justify-between gap-4 mb-1">
+<span class="font-display font-bold text-lg text-on-surface">Performance &amp; Data Analytics</span>
+<span class="font-mono text-xs text-outline group-hover:text-secondary transition-colors">02.2</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                    Revisión de métricas de campañas y reportes de resultados.
+                  </p>
+</div>
+<div class="py-4 group">
+<div class="flex items-baseline justify-between gap-4 mb-1">
+<span class="font-display font-bold text-lg text-on-surface">CRO y Growth</span>
+<span class="font-mono text-xs text-outline group-hover:text-secondary transition-colors">02.3</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                    CRO y Growth como parte de la estrategia de marketing digital.
+                  </p>
+</div>
+<div class="py-4 group">
+<div class="flex items-baseline justify-between gap-4 mb-1">
+<span class="font-display font-bold text-lg text-on-surface">Automation &amp; Lead Nurturing</span>
+<span class="font-mono text-xs text-outline group-hover:text-secondary transition-colors">02.4</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                    Automatización de respuestas en Facebook e Instagram y configuración de WhatsApp empresarial.
+                  </p>
+</div>
+<div class="py-4 group">
+<div class="flex items-baseline justify-between gap-4 mb-1">
+<span class="font-display font-bold text-lg text-on-surface">Desarrollo Web &amp; E-commerce</span>
+<span class="font-mono text-xs text-outline group-hover:text-secondary transition-colors">02.5</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                    Desarrollo web, comercio electrónico y actualización de contenidos según el plan.
+                  </p>
+</div>
+<div class="py-4 group">
+<div class="flex items-baseline justify-between gap-4 mb-1">
+<span class="font-display font-bold text-lg text-on-surface">Brand Architecture &amp; Assets</span>
+<span class="font-mono text-xs text-outline group-hover:text-secondary transition-colors">02.6</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                    Diseño de piezas gráficas y contenidos alineados con la identidad de la marca.
+                  </p>
+</div>
+</div>
+</div>
+<div class="pt-6">
+<a class="inline-flex items-center gap-2 font-display text-xs uppercase tracking-widest font-extrabold text-secondary hover:text-on-surface transition-colors" href="https://wa.me/5493516370246" rel="noopener noreferrer" target="_blank">
+<span>Auditar canales digitales</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. BANNER EDITORIAL DE EVENTOS: Cinematográfico a sangre / Midnight architecture -->
+<section class="w-full bg-[#070d18] text-white py-20 lg:py-32 px-6 lg:px-12 relative overflow-hidden">
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left Column -->
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-flex items-center gap-3 border-b border-white/20 pb-2">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-display uppercase tracking-widest font-extrabold text-xs text-secondary-container">
+                Producción Audiovisual &amp; Cobertura en Vivo
+              </span>
+</div>
+<h2 class="font-display font-black text-3xl sm:text-5xl lg:text-6xl tracking-tight leading-tight uppercase">
+              Social Moments Creator: <br/>
+<span class="font-light italic text-slate-300 normal-case">Tu evento en el feed del mundo.</span>
+</h2>
+<p class="text-slate-300 text-base sm:text-lg font-light leading-relaxed max-w-xl">
+              Creamos contenido para eventos en tiempo real: fotos, videos, stories y reels para compartir en redes sociales.
+            </p>
+<div class="pt-4 flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center gap-3 px-8 py-4 bg-secondary text-white font-display font-bold text-xs uppercase tracking-widest rounded-full hover:bg-white hover:text-primary transition-all duration-300" data-path="eventos" href="eventos.html">
+<span>Explorar Cobertura de Eventos</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="text-xs uppercase tracking-widest text-slate-400 font-mono">Stories • Reels • Contenido en vivo</span>
+</div>
+</div>
+<!-- Right Column: Cinematic Photography Spread Frame -->
+<div class="lg:col-span-5">
+<div class="relative border border-white/20 p-2 sm:p-3 bg-white/5 backdrop-blur-sm">
+<div class="site-social-frame relative w-full aspect-[4/3] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 hover:scale-105" role="img" aria-label="Camarógrafo cubriendo una conferencia corporativa." style="background-image: url('inicio-cobertura-evento.webp')"></div>
+<div class="absolute top-3 left-3 px-3 py-1 bg-black/80 text-white font-mono text-[10px] uppercase tracking-widest flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span>
+<span>TRANSMISIÓN EN DIRECTO</span>
+</div>
+</div>
+<div class="pt-3 px-2 flex items-center justify-between font-mono text-xs text-slate-400">
+<span>PRODUCREM COBERTURAS</span>
+<span>COBERTURA EN VIVO</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. ESTRUCTURA DE PLANES TRANSPARENTES: Editorial Pricing Table -->
+<section class="w-full border-b border-outline-variant/40 px-6 lg:px-12 py-20 lg:py-32 bg-white">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between border-b border-outline-variant/40 pb-8 mb-16 gap-6">
+<div class="max-w-2xl">
+<span class="font-display text-xs uppercase tracking-widest font-extrabold text-secondary block mb-2">
+              Inversión Estratégica
+            </span>
+<h2 class="font-display font-black text-3xl sm:text-5xl text-on-surface tracking-tight">
+              Opciones de Servicios
+            </h2>
+</div>
+<p class="text-on-surface-variant text-base max-w-sm font-normal">
+            Estrategias planificadas para cada etapa de madurez digital de tu empresa o marca.
+          </p>
+</div>
+<!-- 3-Column Integrated Editorial Matrix (No cards, pure typographic architecture) -->
+<div class="grid grid-cols-1 lg:grid-cols-3 border-y border-outline-variant/40 divide-y lg:divide-y-0 lg:divide-x divide-outline-variant/40">
+<!-- Column 1: Starter -->
+<div class="site-plan p-8 lg:p-10 flex flex-col justify-between space-y-10">
+<div>
+<div class="space-y-2 mb-8">
+<span class="font-mono text-xs uppercase tracking-widest text-outline font-bold">NIVEL 01 // INICIO</span>
+<h3 class="font-display font-extrabold text-3xl text-on-surface tracking-tight">Plan Starter</h3>
+<p class="text-xs uppercase tracking-wider font-semibold text-secondary">Enfoque Campañas Meta Ads</p>
+</div>
+<ul class="space-y-3.5 text-sm text-on-surface-variant border-t border-outline-variant/40 pt-6">
+<li class="flex items-start gap-3">
+<span class="font-mono text-secondary text-xs mt-0.5">01</span>
+<span>Redes Sociales activas</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="font-mono text-secondary text-xs mt-0.5">02</span>
+<span>Publicaciones mensuales programadas</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="font-mono text-secondary text-xs mt-0.5">03</span>
+<span>Estrategia de contenido mensual</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="font-mono text-secondary text-xs mt-0.5">04</span>
+<span>Gráficas profesionales para redes</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="font-mono text-secondary text-xs mt-0.5">05</span>
+<span>Creación de campañas FB / IG Ads</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="font-mono text-secondary text-xs mt-0.5">06</span>
+<span>Redacción de textos persuasivos (copywriting)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="font-mono text-secondary text-xs mt-0.5">07</span>
+<span>Optimización integral de perfiles</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="font-mono text-secondary text-xs mt-0.5">08</span>
+<span>Reporte de resultados</span>
+</li>
+</ul>
+</div>
+<div class="pt-6 border-t border-outline-variant/40">
+<a class="w-full inline-flex items-center justify-center py-3.5 border border-on-surface text-on-surface font-display font-bold text-xs uppercase tracking-widest hover:bg-on-surface hover:text-white transition-colors" href="https://wa.me/5493516370246?text=Hola,%20me%20interesa%20el%20Plan%20Starter" rel="noopener noreferrer" target="_blank">
+<span>Consultar Plan Starter</span>
+</a>
+</div>
+</div>
+<!-- Column 2: Medium (Destacado por contraste editorial) -->
+<div class="site-plan p-8 lg:p-10 flex flex-col justify-between space-y-10 bg-slate-50/80 border-t-4 lg:border-t-0 lg:border-t-4 border-secondary relative">
+<div>
+<div class="space-y-2 mb-8">
+<div class="flex items-center justify-between">
+<span class="font-mono text-xs uppercase tracking-widest text-secondary font-bold">NIVEL 02 // CRECIMIENTO</span>
+<span class="px-2.5 py-0.5 bg-secondary text-white font-mono text-[10px] uppercase tracking-widest font-bold">REDES + CONTENIDO</span>
+</div>
+<h3 class="font-display font-extrabold text-3xl text-on-surface tracking-tight">Plan Medium</h3>
+<p class="text-xs uppercase tracking-wider font-semibold text-secondary">Publicaciones + Grabación + Automatizaciones</p>
+</div>
+<div class="text-xs uppercase tracking-widest font-bold text-on-surface pb-3 border-b border-outline-variant/40">
+                Servicios de redes sociales y además:
+              </div>
+<ul class="space-y-3.5 text-sm text-on-surface font-medium pt-4">
+<li class="flex items-start gap-3">
+<span class="font-mono text-secondary text-xs mt-0.5 font-bold">+</span>
+<span>Videos formato Reels mensuales</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="font-mono text-secondary text-xs mt-0.5 font-bold">+</span>
+<span>Respuesta activa de consultas en redes</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="font-mono text-secondary text-xs mt-0.5 font-bold">+</span>
+<span>Automatización de respuestas</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="font-mono text-secondary text-xs mt-0.5 font-bold">+</span>
+<span>Configuración de WhatsApp empresarial</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="font-mono text-secondary text-xs mt-0.5 font-bold">+</span>
+<span class="font-bold text-secondary">Sesión de grabación de videos y fotos</span>
+</li>
+</ul>
+</div>
+<div class="pt-6 border-t border-outline-variant/40">
+<a class="w-full inline-flex items-center justify-center gap-2 py-3.5 bg-primary text-white font-display font-bold text-xs uppercase tracking-widest hover:bg-secondary transition-colors" href="https://wa.me/5493516370246?text=Hola,%20me%20interesa%20el%20Plan%20Medium" rel="noopener noreferrer" target="_blank">
+<span>Elegir Plan Medium</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Column 3: PRO -->
+<div class="site-plan p-8 lg:p-10 flex flex-col justify-between space-y-10">
+<div>
+<div class="space-y-2 mb-8">
+<span class="font-mono text-xs uppercase tracking-widest text-outline font-bold">NIVEL 03 // REDES + WEB</span>
+<h3 class="font-display font-extrabold text-3xl text-on-surface tracking-tight">Plan PRO</h3>
+<p class="text-xs uppercase tracking-wider font-semibold text-secondary">Redes Sociales + Plataforma Web</p>
+</div>
+<div class="text-xs uppercase tracking-widest font-bold text-on-surface-variant pb-3 border-b border-outline-variant/40">
+                Servicios de redes sociales y plataforma web, con:
+              </div>
+<ul class="space-y-3.5 text-sm text-on-surface-variant pt-4">
+<li class="flex items-start gap-3">
+<span class="font-mono text-secondary text-xs mt-0.5 font-bold">+</span>
+<span>Diseño de banners y pop-ups para web</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="font-mono text-secondary text-xs mt-0.5 font-bold">+</span>
+<span>Campañas integrales en Google Ads</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="font-mono text-secondary text-xs mt-0.5 font-bold">+</span>
+<span>Actualización de productos en la web</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="font-mono text-secondary text-xs mt-0.5 font-bold">+</span>
+<span>Mailing semanal y newsletters</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="font-mono text-secondary text-xs mt-0.5 font-bold">+</span>
+<span>Reunión virtual mensual de ajustes</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="font-mono text-secondary text-xs mt-0.5 font-bold">+</span>
+<span>Reporte integrado Google Analytics</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="font-mono text-secondary text-xs mt-0.5 font-bold">+</span>
+<span>Automatización comercial avanzada</span>
+</li>
+</ul>
+</div>
+<div class="pt-6 border-t border-outline-variant/40">
+<a class="w-full inline-flex items-center justify-center py-3.5 border border-on-surface text-on-surface font-display font-bold text-xs uppercase tracking-widest hover:bg-on-surface hover:text-white transition-colors" href="https://wa.me/5493516370246?text=Hola,%20me%20interesa%20el%20Plan%20PRO" rel="noopener noreferrer" target="_blank">
+<span>Consultar Plan PRO</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. CIERRE / CONVERSIÓN: Editorial Statement -->
+<section class="w-full px-6 lg:px-12 py-24 lg:py-36 bg-background">
+<div class="max-w-5xl mx-auto text-center space-y-8">
+<span class="font-display text-xs uppercase tracking-widest font-extrabold text-secondary block">
+          Contacto Directo &amp; Diagnóstico
+        </span>
+<h2 class="font-display font-black text-4xl sm:text-6xl text-on-surface tracking-tight leading-tight">
+          ¿Tienes dudas o buscas un presupuesto a medida?
+        </h2>
+<p class="text-on-surface-variant text-lg sm:text-xl font-normal max-w-2xl mx-auto leading-relaxed">
+          Coordiná una sesión gratuita para conversar sobre los servicios que necesita tu negocio.
+        </p>
+<div class="pt-4 flex flex-wrap items-center justify-center gap-4">
+<a class="site-whatsapp-cta inline-flex items-center gap-3 px-8 py-4 bg-primary text-white font-display font-bold text-xs uppercase tracking-widest rounded-full hover:bg-secondary transition-colors shadow-sm" href="https://wa.me/5493516370246" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>WhatsApp (+54 9 3516 37-0246)</span>
+</a>
+<a class="inline-flex items-center gap-2 px-8 py-4 border border-on-surface text-on-surface font-display font-bold text-xs uppercase tracking-widest rounded-full hover:bg-on-surface hover:text-white transition-colors" href="https://instagram.com/producrem" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-secondary">photo_camera</span>
+<span>Instagram @producrem</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- 8. FOOTER EDITORIAL CONSOLIDADO -->
+<footer class="w-full border-t border-outline-variant/40 bg-white">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-20">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-outline-variant/40">
+<!-- Brand & Group DESINDARG -->
+<div class="md:col-span-5 space-y-4">
+<div class="flex items-center gap-2">
+<span class="font-display font-black tracking-tight text-xl text-on-surface">PRODUCREM</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed max-w-sm">
+            Marketing digital, contenidos y cobertura de eventos.
+          </p>
+<div class="pt-2">
+<span class="font-mono text-[11px] uppercase tracking-wider text-outline block">Organización</span>
+<a class="text-xs font-semibold text-on-surface hover:text-secondary transition-colors" href="https://www.desindarg.com" rel="noopener noreferrer" target="_blank">
+              Parte de Group DESINDARG — www.desindarg.com
+            </a>
+</div>
+</div>
+<!-- Navigation -->
+<div class="md:col-span-3 space-y-3">
+<span class="font-display text-xs uppercase tracking-widest font-extrabold text-on-surface block">
+            Navegación
+          </span>
+<ul class="space-y-2 text-sm text-on-surface-variant">
+<li><a class="hover:text-on-surface transition-colors" data-path="inicio" href="index.html">Inicio</a></li>
+<li><a class="hover:text-on-surface transition-colors" data-path="eventos" href="eventos.html">Eventos</a></li>
+<li><a class="hover:text-on-surface transition-colors" data-path="nosotros" href="nosotros.html">Nosotros</a></li>
+</ul>
+</div>
+<!-- Sedes & Contacto -->
+<div class="md:col-span-4 space-y-4">
+<span class="font-display text-xs uppercase tracking-widest font-extrabold text-on-surface block">
+            Sedes
+          </span>
+<div class="grid grid-cols-2 gap-4 text-sm">
+<div>
+<p class="font-bold text-on-surface">Barcelona</p>
+<p class="text-xs text-on-surface-variant">Les Corts, España</p>
+</div>
+<div>
+<p class="font-bold text-on-surface">Córdoba</p>
+<p class="text-xs text-on-surface-variant">Nueva Córdoba, Argentina</p>
+</div>
+</div>
+<div class="pt-2">
+<span class="font-mono text-[11px] uppercase tracking-wider text-outline block mb-1">Contacto Directo</span>
+<a class="inline-flex items-center gap-2 text-xs font-bold text-on-surface hover:text-secondary transition-colors" href="https://wa.me/5493516370246" rel="noopener noreferrer" target="_blank">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              +54 9 3516 37-0246 (WhatsApp)
+            </a>
+</div>
+</div>
+</div>
+<!-- Copyright strip -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs text-on-surface-variant">
+<p>© Producrem.</p>
+<p class="uppercase tracking-wider">Marketing digital y cobertura de eventos</p>
+</div>
+</div>
+</footer>
+<a class="site-whatsapp-float" href="https://wa.me/5493516370246?text=Hola%2C%20equipo%20de%20Producrem.%20Vi%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20contarles%20sobre%20mi%20proyecto.%20%C2%BFPodemos%20conversar%3F" target="_blank" rel="noopener noreferrer" aria-label="Escribir a Producrem por WhatsApp (abre una pestaña nueva)" title="Escribir por WhatsApp"><img src="whatsapp-icon.svg" alt="" width="28" height="28" aria-hidden="true"/></a>
+</body></html>
