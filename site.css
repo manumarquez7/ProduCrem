@@ -390,6 +390,7 @@ summary:focus-visible {
 
 @media (max-width: 767px) {
   .site-mobile-menu { display: block; }
+  .site-polished footer { padding-bottom: 4.5rem; }
   .site-whatsapp-float {
     right: calc(1rem + env(safe-area-inset-right, 0px));
     bottom: calc(1rem + env(safe-area-inset-bottom, 0px));

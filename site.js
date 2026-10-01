@@ -117,9 +117,15 @@ if (whatsappFloat) {
 
   const intersects = (a, b) => a.left < b.right && a.right > b.left && a.top < b.bottom && a.bottom > b.top;
   const textRange = document.createRange();
+  const mobileViewport = window.matchMedia('(max-width: 767px)');
   let floatUpdatePending = false;
   const updateFloat = () => {
     floatUpdatePending = false;
+    if (mobileViewport.matches) {
+      whatsappFloat.classList.remove('is-obscured');
+      whatsappFloat.tabIndex = 0;
+      return;
+    }
     const rect = whatsappFloat.getBoundingClientRect();
     const area = { left: rect.left, right: rect.right, top: rect.top, bottom: rect.bottom };
     let obstructed = visibleContactAreas.size > 0 || nearbyControls.some(el => intersects(el.getBoundingClientRect(), area))
@@ -156,7 +162,9 @@ if (whatsappFloat) {
     document.querySelectorAll('footer, .site-whatsapp-cta, .site-whatsapp-link')
       .forEach(area => contactObserver.observe(area));
   }
-  window.addEventListener('scroll', queueFloatUpdate, { passive: true });
+  window.addEventListener('scroll', () => {
+    if (!mobileViewport.matches) queueFloatUpdate();
+  }, { passive: true });
   window.addEventListener('resize', queueFloatUpdate);
   window.addEventListener('load', queueFloatUpdate, { once: true });
   document.fonts?.ready.then(queueFloatUpdate);
