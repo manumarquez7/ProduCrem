@@ -357,10 +357,11 @@ summary:focus-visible {
 @media (prefers-reduced-motion: no-preference) {
   .site-reveal-pending {
     opacity: 0;
-    translate: 0 18px;
-    transition: opacity .7s ease, translate .7s cubic-bezier(.2, .75, .2, 1);
+    translate: 0 24px;
+    transition: opacity .8s ease, translate .8s cubic-bezier(.2, .75, .2, 1);
     transition-delay: var(--site-reveal-delay, 0ms);
   }
+  .site-section-reveal.site-reveal-pending { opacity: .72; }
   .site-reveal-pending.site-reveal-visible { opacity: 1; translate: 0 0; }
   .site-home main h1 { animation: site-hero-arrive .85s cubic-bezier(.2, .75, .2, 1) both; }
   .site-home .site-feature-card { animation: site-hero-arrive .8s cubic-bezier(.2, .75, .2, 1) .18s both; }
@@ -370,8 +371,8 @@ summary:focus-visible {
   .site-home .site-hero-dot { animation: site-hero-dot-glow 4s ease-in-out infinite; }
 }
 @keyframes site-hero-arrive {
-  from { opacity: .35; translate: 0 12px; }
-  to { opacity: 1; translate: 0 0; }
+  from { opacity: .3; translate: 0 18px; scale: .985; }
+  to { opacity: 1; translate: 0 0; scale: 1; }
 }
 @keyframes site-hero-ink {
   from { background-position: 0% 50%; }
@@ -458,6 +459,85 @@ summary:focus-visible {
     font-size: clamp(1.75rem, 7.2vw, 2.2rem);
     line-height: 1.17;
     letter-spacing: -.025em;
+  }
+}
+
+/* Deeper surfaces and interaction, retaining the editorial layout. */
+.site-polished header > div {
+  border-color: rgba(10, 17, 32, .11);
+  background-color: rgba(255, 255, 255, .84);
+  -webkit-backdrop-filter: blur(28px) saturate(1.22);
+  backdrop-filter: blur(28px) saturate(1.22);
+  box-shadow: 0 3px 9px rgba(10, 17, 32, .035), 0 18px 40px rgba(10, 17, 32, .08);
+}
+.site-scrolled.site-polished header > div {
+  background-color: rgba(255, 255, 255, .94);
+  box-shadow: 0 4px 12px rgba(10, 17, 32, .05), 0 20px 44px rgba(10, 17, 32, .13);
+}
+.site-polished header > div > nav a,
+.site-polished footer li a {
+  background-image: linear-gradient(#00677d, #00677d);
+  background-size: 0 1px;
+  background-repeat: no-repeat;
+  background-position: left bottom 2px;
+  transition: color .4s ease, background-size .4s cubic-bezier(.2, .75, .2, 1), transform .4s ease;
+}
+.site-home .site-plan,
+.site-home .site-feature-card,
+.site-events .site-phase-card,
+.site-about .site-team-card,
+.site-about .site-location-card {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .72), 0 4px 12px rgba(10, 17, 32, .04), 0 18px 38px rgba(10, 17, 32, .065);
+}
+.site-events .site-cine-card {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .14), 0 8px 20px rgba(10, 17, 32, .10), 0 24px 42px rgba(10, 17, 32, .08);
+}
+.site-events .site-cine-card::after {
+  box-shadow: inset 0 1px 14px rgba(255, 255, 255, .09), inset 0 -42px 55px rgba(3, 10, 22, .14);
+}
+.site-about .site-team-card img,
+.site-events .site-cine-card img { transition-duration: .55s; }
+.site-home main section:nth-of-type(4) {
+  background: radial-gradient(circle at 82% 18%, rgba(0, 103, 125, .22), transparent 38%), linear-gradient(145deg, #070d18, #101c2d);
+}
+.site-events main section:last-child > div > div {
+  background: radial-gradient(circle at 88% 22%, rgba(0, 103, 125, .22), transparent 38%), linear-gradient(145deg, #0e1c2f, #111f33);
+  box-shadow: 0 12px 28px rgba(10, 17, 32, .12), 0 32px 68px rgba(10, 17, 32, .16);
+}
+.site-about main section:last-child {
+  background: radial-gradient(circle at 84% 65%, rgba(0, 103, 125, .20), transparent 38%), linear-gradient(145deg, #0e1c2f, #14243a);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .site-polished header > div > nav a:hover,
+  .site-polished footer li a:hover { background-size: 100% 1px; }
+  .site-home .site-method-card:hover { transform: translateY(-5px); box-shadow: 0 12px 26px rgba(10, 17, 32, .075); }
+  .site-home #ecosistema div.group:hover { transform: translateY(-4px); box-shadow: inset 3px 0 0 rgba(0, 103, 125, .38), 0 12px 26px rgba(10, 17, 32, .055); }
+  .site-home .site-plan:hover,
+  .site-home .site-feature-card:hover,
+  .site-events .site-phase-card:hover,
+  .site-about .site-location-card:hover { transform: translateY(-6px); box-shadow: 0 10px 22px rgba(10, 17, 32, .08), 0 28px 52px rgba(10, 17, 32, .12); }
+  .site-about .site-team-card:hover { transform: translateY(-7px); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .8), 0 12px 24px rgba(10, 17, 32, .08), 0 30px 56px rgba(10, 17, 32, .15); }
+  .site-events .site-cine-card:hover { transform: translateY(-6px); box-shadow: 0 14px 28px rgba(10, 17, 32, .13), 0 32px 62px rgba(10, 17, 32, .17); }
+  .site-events .site-cine-card:hover img,
+  .site-about .site-team-card:hover img { transform: scale(1.05); }
+  .site-events .site-pillar:hover { transform: translateY(-4px); box-shadow: inset 3px 0 0 rgba(0, 103, 125, .26), 0 12px 24px rgba(10, 17, 32, .055); }
+  .site-events .site-pillar:hover > div:first-child span { color: #00677d; transform: translateX(8px); }
+  .site-polished :is(header, main) a[href^="https://wa.me/"][class*="bg-"]:hover,
+  .site-home main a[data-path="eventos"][class*="bg-"]:hover,
+  .site-home main a[href="#ecosistema"]:hover,
+  .site-home .site-plan a:hover {
+    transform: translateY(-3px) scale(1.03);
+    filter: brightness(1.04);
+    box-shadow: 0 8px 16px rgba(10, 17, 32, .10), 0 18px 32px rgba(10, 17, 32, .15);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .site-home main section:first-child > div > div:first-child,
+  .site-events main section:first-child > div > div:first-child,
+  .site-about main section:first-child > div:first-child {
+    animation: site-hero-arrive .7s cubic-bezier(.2, .75, .2, 1) both;
   }
 }
 
