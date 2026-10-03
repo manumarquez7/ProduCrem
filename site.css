@@ -447,7 +447,7 @@ summary:focus-visible {
     bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
   }
   .site-whatsapp-icon { width: 3.25rem; height: 3.25rem; }
-  .site-whatsapp-message { max-width: min(7.75rem, calc(100vw - 2rem)); font-size: .65rem; }
+  .site-whatsapp-message { display: none; }
 }
 
 @media (max-width: 479px) {
