@@ -242,6 +242,57 @@ summary:focus-visible {
 .site-about .site-team-card img { transition-duration: .7s; }
 .site-about .site-team-card img,
 .site-events .site-cine-card img { transition: transform .7s cubic-bezier(.2, .75, .2, 1), filter .7s ease; }
+.site-about .site-team-portrait-manuel {
+  object-fit: cover;
+}
+.site-about .site-team-card .aspect-square img {
+  width: 105%;
+  height: 105%;
+  max-width: none;
+  flex: none;
+  clip-path: circle(40.48% at center);
+}
+.site-about .site-team-card:hover .aspect-square img {
+  clip-path: circle(38.55% at center);
+}
+.site-about .site-team-card .aspect-square img[src="duca-claudio.jpg"] {
+  width: 110%;
+  height: 110%;
+  clip-path: circle(38.64% at center);
+}
+.site-about .site-team-card:hover .aspect-square img[src="duca-claudio.jpg"] {
+  clip-path: circle(36.8% at center);
+}
+.site-about .site-team-card .aspect-square img[src="manuel-marquez.jpg"] {
+  width: 85%;
+  height: 85%;
+  object-position: center 28%;
+  clip-path: circle(50% at center);
+}
+.site-about .site-team-card:hover .aspect-square img[src="manuel-marquez.jpg"] {
+  clip-path: circle(47.62% at center);
+}
+.site-about .site-team-card .aspect-square > div::after {
+  content: "";
+  position: absolute;
+  inset: 7.5%;
+  border: 2px solid #17191c;
+  border-radius: 50%;
+  pointer-events: none;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .site-about .site-team-grid > article:last-child {
+    grid-column: 1 / -1;
+    width: calc((100% - 2rem) / 2);
+    justify-self: center;
+  }
+}
+@media (min-width: 1024px) {
+  .site-about .site-team-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .site-about .site-team-grid > article { grid-column: span 2; }
+  .site-about .site-team-grid > article:nth-child(4) { grid-column: 2 / span 2; }
+  .site-about .site-team-grid > article:nth-child(5) { grid-column: 4 / span 2; }
+}
 .site-about .site-team-card:hover { border-color: rgba(0, 103, 125, .20); }
 .site-about .site-location-card:hover { border-color: rgba(0, 103, 125, .18); }
 .site-about .site-about-intro h1 {
